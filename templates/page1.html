@@ -1,1 +1,14 @@
+{% extends "layout.html" %}
 
+ {% set active_page  = "page1" %}
+
+  {% block title %} Page 1 {% endblock %}
+  
+
+
+{% block content %}<form action='/response'>
+      type in a number in feet and that number in cm will be given<br>
+      <input type="text" name="foot">
+      <br><br>
+      <input type="submit">
+    </form>{% endblock %}
