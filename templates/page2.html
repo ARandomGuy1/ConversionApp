@@ -1,1 +1,15 @@
 
+{% extends "layout.html" %}
+
+ {% set active_page  = "page2" %}
+
+  {% block title %} Page 2 {% endblock %}
+  
+
+
+{% block content %}<form action='/response2'>
+      type in a amount in dollars and that amount in yen will be given<br>
+      <input type="text" name="dollars">
+      <br><br>
+      <input type="submit">
+    </form>{% endblock %}
