@@ -1,1 +1,14 @@
+{% extends "layout.html" %}
 
+ {% set active_page  = "page3" %}
+
+  {% block title %} Page 3 {% endblock %}
+  
+
+
+{% block content %}<form action='/response3'>
+      type in a temperature in ferenheit and that temperature in celcius will be given<br>
+      <input type="text" name="foot">
+      <br><br>
+      <input type="submit">
+    </form>{% endblock %}
