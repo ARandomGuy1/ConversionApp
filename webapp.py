@@ -27,12 +27,12 @@ def render_response():
 @app.route("/response2")
 def render_response2():
     foot = request.args['foot']
-    return render_template('response.html', response2 = float(foot)*30.48)
+    return render_template('response.html', response = float(foot)*30.48)
 
 @app.route("/response3")
 def render_response3():
     foot = request.args['foot']
-    return render_template('response.html', response3 = float(foot)*30.48)
+    return render_template('response.html', response = float(foot)*30.48)
   
 if __name__=="__main__":
     app.run(debug=False, port=54321)
