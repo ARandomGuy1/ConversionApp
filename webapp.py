@@ -24,7 +24,15 @@ def render_response():
     foot = request.args['foot']
     return render_template('response.html', response = float(foot)*30.48)
                       
-   
+@app.route("/response2")
+def render_response():
+    foot = request.args['foot']
+    return render_template('response.html', response2 = float(foot)*30.48)
+
+@app.route("/response3")
+def render_response():
+    foot = request.args['foot']
+    return render_template('response.html', response3 = float(foot)*30.48)
   
 if __name__=="__main__":
     app.run(debug=False, port=54321)
